@@ -1,0 +1,84 @@
+<DOCTYPE! html>
+    <html><head>
+        
+        <body bgcolor="#F0F8FF">
+            <h1 align="center">Admission Registration Form</h2><hr>
+            <div align="center">
+            <form>
+                <fieldset >
+                    <legend><b>Personal Information</b></legend>
+                    <table cellpadding="5">
+                        <tr>
+                            <td>Name:</td>
+                            <td>
+                                <input type="text" name="name" required>
+                            </td>
+                        </tr>
+                        <tr><td>Gender:</td>
+                        <td>
+                            <input type="radio" name="male">Male
+                            <input type="radio" name="female">Female
+                            <input type="radio" name="other" >Other
+                        </td></tr>
+                        <tr>
+                            <td>Date of birth</td>
+                            <td> 
+                                <input type="date" name="dob" required>
+                            </td>
+                        </tr>
+                        <tr><td>Address</td>
+                        <td>
+                            <textarea name="address" rows="3" cols="30"></textarea>
+                        </td></tr>
+                        <tr><td>Phone number</td>
+                            <td><input type="tel" name="phone"></td>
+                        </tr>
+                        <tr><td>Guardian name</td>
+                            <td><input type="text" name="Guardian"></td>
+                        </tr>
+                        <tr><td>Hobbies</td>
+                            <td><input type="checkbox" name="Hobbies" value="Reading">Reading
+                                <input type="checkbox" name="Hobbies" value="Sports">Sports
+                                <input type="checkbox" name="Hobbies" value="Music">Music
+
+                            </td>
+                        </tr>
+                        <tr><td>Extra carricular activities</td>
+                            <td>
+                                <textarea name="activities" rows="3" cols="30"></textarea>
+                            </td></tr>
+                    </table>
+                </fieldset><br>
+                <fieldset>
+                    <legend><b>Course selection</b></legend>
+                    <input type="radio" name="Course" value="BA">BA
+                    <input type="radio" name="Course" value="BSC">BSC
+                    <input type="radio" name="Course" value="BCA">BCA
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Office Use only</b></legend>
+                    <tr>
+                        <td>Admission number:</td>
+                        <td>
+                            <input type="text" name="Admission" required>
+                        </td>
+                    </tr>
+                    <tr><td>Remarks:</td>
+                        <td>
+                            <textarea name="Remarks" rows="2" cols="30"></textarea>
+                        </td></tr>
+                </fieldset>
+            <br>
+
+                <input type="submit" value="submit">
+                <input type="reset" value="Reset">
+
+
+            </form></div>
+        </body>
+    </head>
+        
+    </html>
+</DOCTYPE>

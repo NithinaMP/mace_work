@@ -1,0 +1,20 @@
+/* .box{
+    border: 20px solid ;
+    text-align: center;
+    width: 1000px;
+    margin: 50px auto;
+    padding: 10px;
+    color: darkcyan;
+    font-family: 'Courier New', Courier, monospace;
+} */
+  /* Box for Health Benefits */
+  .box {
+    background-color: #e6f7e6; 
+    border-left: 5px solid #4caf50;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 20px;
+}

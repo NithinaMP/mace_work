@@ -1,0 +1,37 @@
+function validateForm(){
+    
+const username= document.getElementById("username");
+const email= document.getElementById("email");
+const password= document.getElementById("password");
+
+usernameError.textContent='';
+emailError.textContent='';
+passwordError.textContent='';
+
+let isValid=true;
+if (username.value.trim()=== ''){
+usernameError.textContent = "username is required";
+isValid = false;
+}
+elseif(username.value.length <3){
+usernameError.textContent = "username mustbe atleast 3 characters required";
+isValid = false;
+}
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (email.value.trim()===''){
+emailError.textContent = "email is required";
+isValid = false;
+}
+elseif(!emailPattern.test(email.value)){
+emailError.textContent = "please enter valid email address";
+isValid = false;
+}
+if (password.value.trim()=== ''){
+passwordError.textContent = "password is required";
+isValid = false;
+}
+elseif(password.value.length <3){
+passwordError.textContent = "password mustbe atleast 8 characters required";
+isValid = false;
+}
+}

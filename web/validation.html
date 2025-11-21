@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        
+    </head>
+    <body>
+        <h2>Registration Form</h2>
+        <form id="registartionForm" onsubmit="return validationForm()">
+            <label for="username" >Username:</label>
+            <input type="text" id="username" name="username">
+            <span id="usernameError" class="error"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
+            
+            <label for="password" id="password" name="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error"></span>
+
+            <button type="submit" >Register</button>
+        
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Registration Form</title>
+    <link rel="stylesheet" href="valstyle.css">
+</head>
+<body>
+    <form id="registrationForm" novalidate>
+        <h2>Register Now</h2>
+        <div class="form-control">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="3" pattern="^[a-zA-Z0-9_.-]+$">
+            <span class="error-message" aria-live="polite"></span>
+        </div>
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" aria-live="polite"></span>
+        </div>
+        <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <span class="error-message" aria-live="polite"></span>
+        </div>
+        <div class="form-control">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error-message" aria-live="polite"></span>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

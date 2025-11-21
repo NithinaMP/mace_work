@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>     <title>Kitchen Tasks</title> </head>
+
+    <body>
+      <h2>Kitchen Tasks</h2>
+      <p id="status"> </p>
+      <script>
+        const status=document.getElementById('status');
+        function addMessage(message){
+          status.innerHTML += message+"<br>";
+        }
+        function cook(){
+          addMessage("Cooking started");
+          setTimeout(()=>{addMessage("cooking finished!");},3000);
+        }
+
+        function cleanKitchen(){
+          addMessage("Kitchen cleaning started");
+          addMessage("Kitchen cleaning finished");
+        }
+        cook();
+        cleanKitchen();
+      </script>
+    </body>
+</html>
